@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="285.0" prefWidth="345.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.demofx.HelloController">
+
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <TableView fx:id="vReader" prefHeight="200.0" prefWidth="200.0">
+     <columns>
+       <TableColumn fx:id="cName" prefWidth="75.0" text="Name" />
+       <TableColumn fx:id="cHost" prefWidth="75.0" text="Host" />
+         <TableColumn fx:id="cPssword" prefWidth="75.0" text="Password" />
+         <TableColumn fx:id="cAddres" prefWidth="75.0" text="Addres" />
+     </columns>
+   </TableView>
+
+   <Button fx:id="btnOk" mnemonicParsing="false" onAction="#changeButtonText" text="Crate new user" />
+
+
+
+</VBox>
